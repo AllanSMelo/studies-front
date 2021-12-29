@@ -1,0 +1,32 @@
+h1 {
+  text-align: center;
+  color: #a06801;
+  background: #ffcc6e;
+  font-family: serif;
+  font-weight: bold;
+}
+
+p {
+  font-family: 'Times New Roman', Times, serif;
+  color: grey;
+}
+
+h2 {
+  color: red;
+  background-color: #fda3a3;
+  font-weight: bold;
+  padding: 6px 0 6px 6px;
+  border-bottom-color: red;
+  border-bottom-style: solid;
+}
+
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+body {
+  width: 80%;
+  margin: auto;
+}

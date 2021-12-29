@@ -1,0 +1,76 @@
+.primary {
+  margin: 20px;
+  padding:20px;
+  text-align: center;
+}
+
+.primary-text {
+  color: rgb(148, 148, 148);
+  font-size: 14px;
+  padding: 0 20px;
+  line-height: 25px;
+}
+
+.gallery {
+  text-align: center;
+}
+
+.gallery-card {
+  display: inline-block;
+  margin-left: 16px;
+}
+
+.gallery-title {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 200;
+  font-family: 'Franklin Gothic Medium';
+  margin-bottom: 5px;
+}
+
+.gallery-text {
+  color: rgb(168, 166, 166);
+  font-size: 14px;
+  margin-top: 4px;
+}
+
+.secondary {
+  background-color: #003d52;
+  background-image: url(../images/bg_detalhe.png);
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  padding: 50px 50px 50px 100px;
+  color: white;
+  margin: 36px 0;
+}
+
+.secondary-title {
+  text-transform: uppercase;
+  font-size: 40px;
+  font-weight: normal;
+}
+
+.secondary-text {
+  width: 50%;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.contact {
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: bold;
+  color: rgb(1, 65, 85);
+  margin-bottom: 36px;
+  text-align: center;
+}
+
+.footer {
+  background-color: black;
+  color: rgb(2, 106, 138);
+  padding: 12px;
+  margin-top: 30px;
+  font-size: 8px;
+  letter-spacing: 4px;
+  text-align: center;
+}

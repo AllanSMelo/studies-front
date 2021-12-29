@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Treinamento htlm5 Básico</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Allan Melo">
+        <meta name="description" content="Paginas para treinamentos de html5 básico">
+        <meta name="keywords" content="treinamento, html5, basico">
+        <style>
+            body {
+                font-family: sans-serif;
+            }
+
+            .regular-checkbox {
+              width: 0;
+              height: 0;
+              margin: 0;
+            }
+
+            .checkbox-custom {
+              display: inline-block;
+              height: 20px;
+              width: 45px;
+              border: 1px solid #ccc;
+              margin-right: 5px;
+              border-radius: 15px;
+              background: #ddd;
+            }
+
+            .checkbox-custom:before {
+                content: '';
+                background: rgb(238, 236, 236);
+                height: 15px;
+                width: 15px;
+                display: inline-block;
+                border-radius: 50%;
+                vertical-align: middle;
+                transition: all .3s;
+            }
+
+            input[type="checkbox"]:checked + label .checkbox-custom:before {
+              background: red;
+              transform: translateX(30px);
+            }
+
+        </style>
+    </head>
+    <body>
+        <h1>Estrutura Básica</h1>
+
+        <input 
+          type="checkbox" 
+          name="sport" 
+          id="chek-esport" 
+          class="regular-checkbox"
+        >
+        <label for="chek-esport">
+            <span class="checkbox-custom"></span>Esporte
+        </label>
+
+        <input 
+          type="checkbox" 
+          name="politics" 
+          id="chek-politics" 
+          class="regular-checkbox"
+        >
+        <label for="chek-politics">
+            <span class="checkbox-custom"></span>Politica
+        </label>
+
+        <input 
+          type="checkbox" 
+          name="education" 
+          id="chek-education" 
+          class="regular-checkbox"
+        >
+        <label for="chek-education">
+            <span class="checkbox-custom"></span>Educação
+        </label>
+    </body>
+</html>

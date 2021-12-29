@@ -1,0 +1,108 @@
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  background: #ccc;
+  margin: 0;
+}
+
+.hero{
+  background-image: url(./imagens/bg-3.jpg);
+  height: 500px;
+  background-position: right center;
+  background-size: cover;
+  border-top: 0.1px solid transparent;
+}
+
+.hero-content{
+  text-align: center;
+  color: white;
+  margin-top: 150px;
+}
+
+.hero-content-title{
+  font-size: 46px;
+  text-transform: uppercase;
+  text-shadow: 3px 3px 2px #333;
+}
+
+.hero-content-text {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 15px;
+  border-bottom: 2px solid white;
+  display: inline-block;
+}
+
+.menu{
+  list-style-type: none;
+  text-align: right;
+  margin: 30px 25px 0 0;
+  padding: 0;
+}
+
+.menu-link{
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 15px;
+  border: 2px solid white;
+  background-color: rgba(0, 0, 0, 0.2);
+  font-size: 12px;
+  letter-spacing: 2px;
+  margin-left: 10px;
+}
+.menu a:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.menu-line{
+ display: inline-block;
+}
+
+main{
+  width: 80%;
+  margin: auto;
+}
+.content-section{
+  background-color: white;
+  padding: 15px;
+  margin-top: 15px;
+  overflow: auto;
+}
+.content-section h2{
+  background-color: #ddd;
+  margin-top: 0;
+  padding: 10px;
+  border-bottom: 3px #ccc solid;
+}
+
+.card {
+  float: left;
+  width: 32%;
+}
+
+.card-1, .card-2 {
+  margin-right: 2%;
+}
+
+.card img {
+  width: 100%;
+  display: block;
+}
+
+.card p{
+  margin: 0;
+  padding: 15px 10px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.footer{
+  height: 80px;
+  color: white;
+  text-align: center;
+  background-color: rgb(112, 112, 112);
+  line-height: 80px;
+  text-shadow: 3px 3px 2px #333;
+  font-size: 14px;
+}

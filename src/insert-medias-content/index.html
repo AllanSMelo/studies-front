@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Medias content in html</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Allan Melo">
+        <meta name="description" content="Paginas para treinamentos de inserção de mídas variadas">
+        <meta name="keywords" content="treinamento, html5, basico, mídias, mp3, vídeo">
+        <meta name="viewport" content="width=device-width">
+        <link href="./main.css" rel="stylesheet" type="text/css">
+        <link href="./normalize.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <section>
+            <h1 class="title">Audio</h1>
+            <div class="title">
+                <audio controls>
+                    <source src="./media/mozart_trompa.mp3" type="audio/mp3">
+                    <source src="./media/mozart_trompa.ogg" type="audo/ogg">
+                    <p>Seu browser não suporta esse recurso</p>
+                </audio>
+            </div>
+        </section>
+
+        <div class="spacer-base"></div>
+        
+        <section>
+            <h1 class="title">Vídeo</h1>
+            <div class="title">
+                <video controls class="media-appearence">
+                    <source src="./media/video.mp4" type="video/mp4">
+                    <source src="./media/video.ogv" type="video/ogv">
+                    <source src="./media/video.webm" type="video/webm">
+                    <p>Seu browser não suporta esse recurso</p>
+                </video>
+            </div>
+        </section>
+
+        <div class="spacer-base"></div>
+
+        <section>
+            <h1 class="title">Iframe</h1>
+            <div class="title">
+            <iframe 
+                width="560" 
+                height="315" 
+                src="https://www.youtube.com/embed/Opqgwn8TdlM" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen
+                class="media-appearence">
+            </iframe>
+            </div>
+        </section>
+
+        <div class="spacer-base"></div>
+
+        <section>
+            <h1 class="title">Imagens</h1>
+            <div class="title">
+                <picture>
+                    <source 
+                        media="(min-width: 480px)" sizes="33vw" 
+                        srcset="./media/rwd-images/1280.jpg 1280w, ./media/rwd-images/960.jpg 960w, ./media/rwd-images/480.jpg 480w"
+                        class="media-appearence">
+                    <source 
+                        sizes="100vw" 
+                        srcset="./media/rwd-images/822_mob.jpg 822w, ./media/rwd-images/640_mob.jpg 640w, ./media/rwd-images/320_mob.jpg 320w"
+                        class="media-appearence">
+                    <img src="./media/rwd-images/1280.jpg" alt="Imagem de um drone sobre o por do sol" class="media-appearence">
+                </picture>
+            </div>
+        </section>
+
+        <div class="spacer-base"></div>
+    
+    </body>
+</html>
