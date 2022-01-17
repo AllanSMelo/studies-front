@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Treinamento htlm5 CSS3 Calculadora</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Allan Melo">
+        <meta name="description" content="Paginas para treinamentos de html5 básico">
+        <meta name="keywords" content="treinamento, html5, basico">
+        <meta name="viewport" content="width=device-width">
+
+        <style>
+            .calculator {
+                background: #ccc;
+                width: 70%;
+                height: 50vh;
+                margin: 0 auto 16px auto;
+                padding: 24px;
+                border-radius: 16px;
+                box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.4);
+            }
+
+            .calcDisplayContainer {
+                display: grid;
+                height: 100%;
+                grid-template-rows: 12% 85%;
+                gap: 3%;
+            }
+            .calcDisplay {
+                display: flex;
+                font-size: 2em;
+                width: 90%;
+                background: rgb(236, 236, 236);
+                align-items: center;
+                justify-content: right;
+                padding: 12px;
+                margin: 0 auto;
+                border-left: 3px solid #FFF;
+                border-top: 3px solid #FFF;
+            }
+
+            .calcButtonsContainer {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                grid-template-rows: repeat(5, 1fr);
+                gap: 3%
+            }
+
+            .calcButton {
+                border: none;
+                box-shadow: 0 0 4px 4px rgb(172, 170, 170);
+            }
+
+            .calcButton:hover {
+                background: rgb(172, 170, 170);
+            }
+
+            .dubleButton {
+                background: rgb(160, 160, 160);
+                box-shadow: none;
+                border-left: 3px solid rgb(223, 221, 221);
+                border-right: 3px solid rgb(105, 105, 105);
+                border-top: 3px solid rgb(223, 221, 221);
+                border-bottom: 3px solid rgb(105, 105, 105);
+            }
+
+            .zeroButton {
+                grid-row: 5;
+                grid-column: 1 / 3;
+            }
+
+            .plusButton {
+                grid-row: 4 / 6;
+                grid-column: 4;
+            }
+
+            @media screen and (min-width: 600px) {
+                .calculator {
+                    width: 40%;
+                    height: 500px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Calculadora</h1>
+
+        <div class="calculator">
+            <div class="calcDisplayContainer">
+                <div class="calcDisplay">0</div>
+                <div class="calcButtonsContainer">
+                    <button class="calcButton">AC</button>
+                    <button class="calcButton">%</button>
+                    <button class="calcButton">X</button>
+                    <button class="calcButton">/</button>
+                    <button class="calcButton">7</button>
+                    <button class="calcButton">8</button>
+                    <button class="calcButton">9</button>
+                    <button class="calcButton">=</button>
+                    <button class="calcButton">4</button>
+                    <button class="calcButton">5</button>
+                    <button class="calcButton">6</button>
+                    <button class="calcButton">-</button>
+                    <button class="calcButton">1</button>
+                    <button class="calcButton">2</button>
+                    <button class="calcButton">3</button>
+                    <button class="calcButton zeroButton dubleButton">0</button>
+                    <button class="calcButton">,</button>
+                    <button class="calcButton plusButton dubleButton">+</button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
